@@ -61,5 +61,6 @@ app.post('/chat', async (req, res) => {
   res.status(429).json({ error: 'all keys exhausted' });
 });
 
+
 app.listen(process.env.PORT || 3000);
 console.log('Gateway running, keys:', KEYS.length);
